@@ -1,5 +1,4 @@
-﻿using CafeCore.Models.Enums;
-using CafeCore.Models.Models;
+﻿using CafeCore.Models.Models;
 using CafeCore.Repositories.Repositories.ProductRepository;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
