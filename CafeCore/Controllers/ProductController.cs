@@ -9,7 +9,7 @@ namespace CafeCore.Controllers;
 [Route("api/[controller]")]
 public class ProductController : Controller
 {
-    private readonly IProductRepository _productRepository
+    private readonly IProductRepository _productRepository;;
 
     public ProductController(IProductRepository productRepository)
     {
