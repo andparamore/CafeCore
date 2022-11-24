@@ -9,7 +9,6 @@ public class Category
     public string Name { get; init; }
     public string? Description { get; set; }
     public Location Location { get; init; }
-    public ICollection<Product> Products { get; set; }
 
     /*
     public Category(string name, string? description, Location location)

@@ -43,7 +43,7 @@ public class ProductController : Controller
             }
 
             var result = await _productRepository.GetProductByIdAsync(id);
-            return result is null ? Ok(result)
+            return !(result is null) ? Ok(result)
                 : NotFound("Product isn't found in database");
         }
         catch (Exception e)

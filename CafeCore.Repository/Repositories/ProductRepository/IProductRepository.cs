@@ -1,5 +1,4 @@
-﻿using CafeCore.Models.Interface;
-using CafeCore.Models.Models;
+﻿using CafeCore.Models.Models;
 
 namespace CafeCore.Repositories.Repositories.ProductRepository;
 

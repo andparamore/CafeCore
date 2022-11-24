@@ -12,15 +12,11 @@ public class ProductContext : DbContext
     public ProductContext(DbContextOptions<ProductContext> options)
         : base(options)
     {
-        Database.EnsureDeleted();
         Database.EnsureCreated();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Product>()
-            .HasOne(p => p.Category)
-            .WithMany(t => t.Products)
-            .HasForeignKey(p => p.CategoryId);
+        
     }
 }
